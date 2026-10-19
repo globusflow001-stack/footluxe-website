@@ -1,0 +1,1432 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* =========================================
+   FOOTLUXE — PREMIUM SIGNATURE DESIGN
+========================================= */
+
+.fl-home {
+  --orange: #ff991f;
+  --orange-light: #ffc36c;
+  --dark: #090a08;
+  --dark-soft: #141610;
+  --text: #191a16;
+  --muted: #85877e;
+  --paper: #f6f5f0;
+
+  width: 100%;
+  overflow: clip;
+  color: var(--text);
+  background: var(--paper);
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.fl-home *,
+.fl-home *::before,
+.fl-home *::after {
+  box-sizing: border-box;
+}
+
+.fl-home button,
+.fl-home a {
+  font: inherit;
+}
+
+.fl-home button {
+  cursor: pointer;
+}
+
+.fl-home button:focus-visible,
+.fl-home a:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 4px;
+}
+
+.fl-home img {
+  display: block;
+  max-width: 100%;
+}
+
+.fl-home h1,
+.fl-home h2,
+.fl-home h3,
+.fl-home p {
+  overflow-wrap: break-word;
+}
+
+.fl-home .fl-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #85877e;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  line-height: 1.7;
+}
+
+.fl-home .fl-eyebrow-line {
+  flex: 0 0 auto;
+  width: 27px;
+  height: 2px;
+  background: var(--orange);
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.fl-home .fl-hero {
+  position: relative;
+  isolation: isolate;
+  color: #fff;
+  background:
+    radial-gradient(ellipse at 77% 44%, #8d421b35, transparent 37%),
+    radial-gradient(ellipse at 12% 70%, #38211138, transparent 36%),
+    linear-gradient(115deg, #080907, #141610 55%, #080907);
+}
+
+.fl-home .fl-hero-grid {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: .17;
+  background-image:
+    linear-gradient(#ffffff0a 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff0a 1px, transparent 1px);
+  background-size: 65px 65px;
+  mask-image: linear-gradient(90deg, #000, transparent 95%);
+}
+
+.fl-home .fl-hero-glow {
+  position: absolute;
+  top: 3%;
+  right: 9%;
+  z-index: -1;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  background: #ff941820;
+  filter: blur(100px);
+  animation: flGlow 6s ease-in-out infinite alternate;
+}
+
+.fl-home .fl-hero-inner {
+  width: min(1280px, calc(100% - 72px));
+  min-height: 625px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  align-items: center;
+  gap: 10px;
+  padding: 60px 0 45px;
+}
+
+.fl-home .fl-hero-copy {
+  position: relative;
+  z-index: 5;
+}
+
+.fl-home .fl-hero-kicker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #c4c5bd;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .19em;
+}
+
+.fl-home .fl-hero-kicker > span {
+  flex: 0 0 auto;
+  width: 27px;
+  height: 2px;
+  background: var(--orange);
+  box-shadow: 0 0 14px #ff9418a0;
+}
+
+.fl-home .fl-hero-title,
+.fl-home .fl-products-intro h2,
+.fl-home .fl-manufacturing-copy h2,
+.fl-home .fl-benefits-heading h2,
+.fl-home .fl-cta-content h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.fl-home .fl-hero-title {
+  margin: 29px 0 23px;
+  font-size: clamp(50px, 6.2vw, 86px);
+  line-height: .99;
+  letter-spacing: -.065em;
+}
+
+.fl-home .fl-hero-title > span {
+  display: inline-block;
+  color: var(--orange);
+  background: linear-gradient(110deg, #ffd08a, #ff9418 60%, #e66e0b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fl-home .fl-hero-description {
+  max-width: 430px;
+  margin: 0;
+  color: #b8bbb1;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.fl-home .fl-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.fl-home .fl-button {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  transition:
+    transform .3s ease,
+    background .3s ease,
+    border-color .3s ease,
+    box-shadow .3s ease;
+}
+
+.fl-home .fl-button > span {
+  font-size: 17px;
+  transition: transform .3s ease;
+}
+
+.fl-home .fl-button:hover {
+  transform: translateY(-3px);
+}
+
+.fl-home .fl-button:hover > span {
+  transform: translate(3px, -2px);
+}
+
+.fl-home .fl-button-orange {
+  color: #18130b;
+  background: linear-gradient(110deg, #ffc05c, #ff9017);
+  box-shadow: 0 8px 27px #ff941821;
+}
+
+.fl-home .fl-button-orange:hover {
+  box-shadow: 0 12px 35px #ff94184b;
+}
+
+.fl-home .fl-button-outline {
+  color: #fff;
+  border-color: #ffffff36;
+  background: #ffffff07;
+  backdrop-filter: blur(10px);
+}
+
+.fl-home .fl-button-outline:hover {
+  border-color: var(--orange);
+  background: #ff941812;
+}
+
+.fl-home .fl-button-dark {
+  color: #fff;
+  background: #171914;
+}
+
+.fl-home .fl-button-dark:hover {
+  background: #35372d;
+}
+
+.fl-home .fl-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 33px;
+}
+
+.fl-home .fl-hero-points > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #d1d2cb;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.fl-home .fl-hero-points b {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #6d7065;
+  border-radius: 50%;
+  color: var(--orange);
+  font-size: 13px;
+}
+
+/* =========================================
+   FLOATING PRODUCT SHOWCASE
+========================================= */
+
+.fl-home .fl-hero-visual {
+  position: relative;
+  min-width: 0;
+  height: 455px;
+  perspective: 1100px;
+}
+
+.fl-home .fl-visual-glow {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  z-index: -1;
+  width: 70%;
+  height: 55%;
+  border-radius: 50%;
+  background: #ff781e35;
+  filter: blur(65px);
+  animation: flGlow 5s ease-in-out infinite alternate;
+}
+
+.fl-home .fl-visual-ring {
+  position: absolute;
+  top: 9%;
+  left: 10%;
+  width: 80%;
+  height: 82%;
+  border: 1px solid #ffffff12;
+  border-radius: 50%;
+  transform: rotate(-23deg);
+}
+
+.fl-home .fl-ring-two {
+  top: 5%;
+  left: 20%;
+  width: 60%;
+  height: 90%;
+  border-color: #ff941827;
+  transform: rotate(35deg);
+}
+
+.fl-home .fl-product-orbit {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--orange);
+  box-shadow: 0 0 20px 5px #ff941844;
+  animation: flDot 5s ease-in-out infinite;
+}
+
+.fl-home .fl-orbit-one {
+  top: 17%;
+  left: 20%;
+}
+
+.fl-home .fl-orbit-two {
+  right: 17%;
+  bottom: 17%;
+  animation-delay: -2s;
+}
+
+.fl-home .fl-sole {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  transform-origin: center;
+}
+
+.fl-home .fl-sole img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(10px 24px 16px #000a);
+}
+
+.fl-home .fl-sole-back {
+  top: 4%;
+  left: 58%;
+  z-index: 1;
+  width: 39%;
+  height: 78%;
+  opacity: .75;
+  animation: flBack 7s ease-in-out infinite;
+}
+
+.fl-home .fl-sole-left {
+  top: 15%;
+  left: 4%;
+  z-index: 2;
+  width: 39%;
+  height: 74%;
+  opacity: .86;
+  animation: flLeft 6s ease-in-out infinite;
+}
+
+.fl-home .fl-sole-right {
+  top: 16%;
+  left: 45%;
+  z-index: 2;
+  width: 39%;
+  height: 77%;
+  animation: flRight 6.5s ease-in-out infinite;
+}
+
+.fl-home .fl-sole-front {
+  top: 0;
+  left: 26%;
+  z-index: 4;
+  width: 43%;
+  height: 87%;
+  animation: flFront 5.5s ease-in-out infinite;
+}
+
+.fl-home .fl-sole-front img {
+  filter:
+    drop-shadow(0 0 16px #ff941817)
+    drop-shadow(12px 28px 18px #000b);
+}
+
+.fl-home .fl-floating-label {
+  position: absolute;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid #ffb44b38;
+  background: #151610d9;
+  box-shadow: 0 10px 40px #0003;
+  backdrop-filter: blur(14px);
+  animation: flLabel 1s .6s both;
+}
+
+.fl-home .fl-floating-label > span {
+  color: var(--orange);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .15em;
+}
+
+.fl-home .fl-floating-label > strong {
+  color: #f5f3ec;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.fl-home .fl-label-top {
+  top: 8%;
+  left: 0;
+}
+
+.fl-home .fl-label-bottom {
+  right: 3%;
+  bottom: 7%;
+  border-left: 2px solid var(--orange);
+}
+
+.fl-home .fl-visual-index {
+  position: absolute;
+  top: 28%;
+  right: 0;
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fl-home .fl-visual-index button {
+  padding: 0;
+  border: 0;
+  color: #77796e;
+  background: transparent;
+  font-size: 10px;
+  transition: color .25s ease, transform .25s ease;
+}
+
+.fl-home .fl-visual-index button.active,
+.fl-home .fl-visual-index button:hover {
+  color: var(--orange);
+  transform: translateX(-3px);
+}
+
+.fl-home .fl-hero-footer {
+  min-height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 12px max(36px, calc((100% - 1280px) / 2));
+  border-top: 1px solid #ffffff17;
+  color: #999c92;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.fl-home .fl-hero-footer a {
+  color: #efeee8;
+  text-decoration: none;
+  transition: color .25s ease;
+}
+
+.fl-home .fl-hero-footer a:hover {
+  color: var(--orange);
+}
+
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
+.fl-home .fl-reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition:
+    opacity .75s ease,
+    transform .75s cubic-bezier(.2,.7,.2,1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.fl-home .fl-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================================
+   PRODUCT RANGE
+========================================= */
+
+.fl-home .fl-products-section {
+  padding: 85px 0 90px;
+  background:
+    radial-gradient(ellipse at 100% 0%, #e9e2d4, transparent 36%),
+    #f5f4ef;
+}
+
+.fl-home .fl-products-layout {
+  width: min(1280px, calc(100% - 72px));
+  margin: auto;
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+
+.fl-home .fl-products-intro h2 {
+  margin: 20px 0 16px;
+  font-size: clamp(35px, 3.7vw, 48px);
+  line-height: 1.08;
+  letter-spacing: -.055em;
+}
+
+.fl-home .fl-products-intro h2 span,
+.fl-home .fl-benefits-heading h2 span {
+  color: #c96e09;
+}
+
+.fl-home .fl-products-intro > p {
+  margin: 0 0 25px;
+  color: #72766c;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+/* FOOTLUXE - Responsive Premium Product Cards */
+
+.fl-home .fl-product-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.fl-home .fl-product-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fffefa;
+  border: 1px solid #e6e3da;
+  transition: transform .35s ease,
+              box-shadow .35s ease,
+              border-color .35s ease;
+}
+
+.fl-home .fl-product-card:hover {
+  transform: translateY(-5px);
+  border-color: #e99a62;
+  box-shadow: 0 14px 30px rgba(25, 22, 20, .10);
+}
+
+.fl-home .fl-product-image {
+  position: relative;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background: #f5f3ee;
+}
+
+.fl-home .fl-product-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform .45s ease;
+}
+
+.fl-home .fl-product-card:hover .fl-product-image img {
+  transform: scale(1.06);
+}
+
+.fl-home .fl-product-card-info {
+  margin-top: auto;
+  padding: 18px;
+}
+
+@media (max-width: 600px) {
+  .fl-home .fl-products-layout {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .fl-home .fl-product-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .fl-home .fl-product-image {
+    height: 145px;
+    padding: 10px;
+  }
+
+  .fl-home .fl-product-card-info {
+    padding: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fl-home .fl-product-card,
+  .fl-home .fl-product-image img {
+    transition: none;
+  }
+}
+.fl-home .fl-product-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.fl-home .fl-product-card {
+  position: relative;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #e6e3da;
+  background: #fffefa;
+  border-radius: 4px;
+  transition: transform .4s ease,
+              box-shadow .4s ease,
+              border-color .4s ease;
+}
+
+.fl-home .fl-product-card:hover {
+  transform: translateY(-6px);
+  border-color: #e9a06e;
+  box-shadow: 0 18px 40px rgba(32, 27, 24, .12);
+}
+.fl-home .fl-product-card {
+  position: relative;
+  height: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e6e3da;
+  background: #fffefa;
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
+}
+
+.fl-home .fl-product-card:hover {
+  transform: translateY(-8px);
+  border-color: #e9bd7a;
+  box-shadow: 0 20px 45px #201b1014;
+}
+
+.fl-home .fl-product-image {
+  position: relative;
+  height: 175px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: radial-gradient(ellipse at center, #e5e4db, #f9f8f3 75%);
+}
+
+.fl-home .fl-product-image img {
+  width: 84%;
+  height: 83%;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 9px #1818101a);
+  transition: transform .6s cubic-bezier(.2,.7,.2,1);
+}
+
+.fl-home .fl-product-card:hover .fl-product-image img {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.fl-home .fl-product-number {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  z-index: 1;
+  padding: 4px 6px;
+  border: 1px solid #dcdad1;
+  background: #ffffffbb;
+  color: #65685f;
+  font-size: 9px;
+}
+
+.fl-home .fl-product-arrow {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  z-index: 2;
+  width: 31px;
+  height: 31px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #d5d6ce;
+  border-radius: 50%;
+  color: #22251f;
+  background: #ffffffdd;
+  font-size: 16px;
+  transition: all .3s ease;
+}
+
+.fl-home .fl-product-arrow:hover {
+  border-color: var(--orange);
+  background: var(--orange);
+  transform: rotate(45deg);
+}
+
+.fl-home .fl-product-card-info {
+  padding: 15px 12px;
+}
+
+.fl-home .fl-product-card-info h3 {
+  margin: 0 0 6px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: -.035em;
+  line-height: 1.5;
+}
+
+.fl-home .fl-product-card-info p {
+  min-height: 30px;
+  margin: 0 0 13px;
+  color: #81847a;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.fl-home .fl-product-card-info > button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px 0 0;
+  border: 0;
+  border-top: 1px solid #e8e8e2;
+  color: #34362f;
+  background: transparent;
+  text-align: left;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.fl-home .fl-product-card-info > button:hover {
+  color: #c96d08;
+}
+
+.fl-home .fl-product-card-info > button span {
+  font-size: 15px;
+}
+
+/* =========================================
+   MANUFACTURING SECTION
+========================================= */
+
+.fl-home .fl-manufacturing {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(ellipse at 78% 40%, #71371932, transparent 40%),
+    linear-gradient(110deg, #090a08, #171912 60%, #090a08);
+}
+
+.fl-home .fl-manufacturing-inner {
+  width: min(1280px, calc(100% - 72px));
+  min-height: 390px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: .9fr 1.2fr .42fr;
+  align-items: center;
+  gap: 28px;
+  padding: 60px 0;
+}
+
+.fl-home .fl-manufacturing-copy h2 {
+  margin: 21px 0 16px;
+  font-size: clamp(30px, 3.3vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -.055em;
+}
+
+.fl-home .fl-manufacturing-copy h2 span {
+  color: var(--orange);
+}
+
+.fl-home .fl-manufacturing-copy > p {
+  margin: 0 0 24px;
+  color: #b4b7ad;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.fl-home .fl-factory-image {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  border: 1px solid #ffffff1a;
+  background: radial-gradient(ellipse, #634024, #1a1c17);
+}
+
+.fl-home .fl-factory-image > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+
+.fl-home .fl-factory-image:hover > img {
+  transform: scale(1.06);
+}
+
+.fl-home .fl-factory-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #070807e8, transparent 75%);
+}
+
+.fl-home .fl-factory-caption {
+  position: absolute;
+  right: 18px;
+  bottom: 20px;
+  left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.fl-home .fl-factory-caption span {
+  color: #ffb347;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .15em;
+}
+
+.fl-home .fl-factory-caption strong {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.fl-home .fl-manufacturing-side {
+  padding-left: 18px;
+  border-left: 1px solid #ffffff20;
+}
+
+.fl-home .fl-manufacturing-side > div {
+  padding: 15px 0;
+  border-bottom: 1px solid #ffffff18;
+  transition: padding-left .3s ease;
+}
+
+.fl-home .fl-manufacturing-side > div:hover {
+  padding-left: 6px;
+}
+
+.fl-home .fl-manufacturing-side > div:last-child {
+  border-bottom: 0;
+}
+
+.fl-home .fl-manufacturing-side span {
+  color: var(--orange);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.fl-home .fl-manufacturing-side p {
+  margin: 5px 0 0;
+  color: #b4b7ad;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   WHY FOOTLUXE
+========================================= */
+
+.fl-home .fl-benefits-section {
+  padding: 85px 0;
+  background:
+    radial-gradient(ellipse at 0 0, #e8e4d9, transparent 40%),
+    #f7f6f1;
+}
+
+.fl-home .fl-benefits-inner {
+  width: min(1280px, calc(100% - 72px));
+  margin: auto;
+}
+
+.fl-home .fl-benefits-heading {
+  margin-bottom: 32px;
+}
+
+.fl-home .fl-benefits-heading h2 {
+  margin: 19px 0 0;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.13;
+  letter-spacing: -.055em;
+}
+
+.fl-home .fl-benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.fl-home .fl-benefit-card {
+  position: relative;
+  min-height: 205px;
+  overflow: hidden;
+  padding: 22px 18px;
+  border: 1px solid #e5e3da;
+  background: #fffefa;
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
+}
+
+.fl-home .fl-benefit-card:hover {
+  transform: translateY(-6px);
+  border-color: #e9b96d;
+  box-shadow: 0 17px 36px #201b100e;
+}
+
+.fl-home .fl-benefit-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 17px;
+  border: 1px solid #ff94184a;
+  color: #e88913;
+  background: #fff7e9;
+  font-size: 25px;
+  transition: transform .3s ease;
+}
+
+.fl-home .fl-benefit-card:hover .fl-benefit-icon {
+  transform: rotate(-8deg);
+}
+
+.fl-home .fl-benefit-card h3 {
+  margin: 0 0 8px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+
+.fl-home .fl-benefit-card p {
+  margin: 0;
+  color: #7c8077;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.fl-home .fl-benefit-index {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+  color: #b9bcb3;
+  font-size: 9px;
+}
+
+/* =========================================
+   FINAL CALL TO ACTION
+========================================= */
+
+.fl-home .fl-cta-section {
+  position: relative;
+  overflow: hidden;
+  padding: 85px 36px;
+  color: #fff;
+  background:
+    radial-gradient(ellipse at 80% 50%, #71351236, transparent 42%),
+    #10120e;
+}
+
+.fl-home .fl-cta-content {
+  position: relative;
+  z-index: 2;
+  width: min(1280px, 100%);
+  margin: auto;
+}
+
+.fl-home .fl-cta-content h2 {
+  margin: 20px 0 15px;
+  font-size: clamp(48px, 6.4vw, 78px);
+  line-height: .98;
+  letter-spacing: -.06em;
+}
+
+.fl-home .fl-cta-content h2 span {
+  color: var(--orange);
+}
+
+.fl-home .fl-cta-content > p {
+  max-width: 430px;
+  margin: 0 0 25px;
+  color: #b4b7ad;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.fl-home .fl-cta-mark {
+  position: absolute;
+  top: -80px;
+  right: 7%;
+  color: #ffffff07;
+  font-size: clamp(200px, 31vw, 400px);
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -.08em;
+  pointer-events: none;
+}
+
+.fl-home .fl-cta-glow {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #ff94181c;
+  filter: blur(90px);
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+.fl-home .fl-enter {
+  opacity: 0;
+  animation: flEnter .8s cubic-bezier(.2,.7,.2,1) forwards;
+}
+
+.fl-home .fl-delay-1 { animation-delay: .08s; }
+.fl-home .fl-delay-2 { animation-delay: .2s; }
+.fl-home .fl-delay-3 { animation-delay: .35s; }
+.fl-home .fl-delay-4 { animation-delay: .48s; }
+.fl-home .fl-delay-5 { animation-delay: .62s; }
+
+@keyframes flEnter {
+  from {
+    opacity: 0;
+    transform: translateY(23px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes flFront {
+  0%, 100% { transform: translateY(0) rotate(-8deg); }
+  50% { transform: translateY(-18px) rotate(-4deg); }
+}
+
+@keyframes flBack {
+  0%, 100% { transform: translateY(0) rotate(19deg); }
+  50% { transform: translateY(-12px) rotate(15deg); }
+}
+
+@keyframes flLeft {
+  0%, 100% { transform: translateY(0) rotate(-23deg); }
+  50% { transform: translateY(-17px) rotate(-18deg); }
+}
+
+@keyframes flRight {
+  0%, 100% { transform: translateY(0) rotate(14deg); }
+  50% { transform: translateY(-13px) rotate(19deg); }
+}
+
+@keyframes flGlow {
+  from { opacity: .45; transform: scale(.95); }
+  to { opacity: 1; transform: scale(1.08); }
+}
+
+@keyframes flDot {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(13px, -19px); }
+}
+
+@keyframes flLabel {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+  .fl-home .fl-hero-inner,
+  .fl-home .fl-products-layout,
+  .fl-home .fl-manufacturing-inner,
+  .fl-home .fl-benefits-inner {
+   width: calc(100% - 36px);
+  }
+
+  .fl-home .fl-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 48px 0 25px;
+  }
+
+  .fl-home .fl-hero-title {
+    margin: 23px 0 17px;
+    font-size: clamp(44px, 11vw, 64px);
+    letter-spacing: -.065em;
+  }
+
+  .fl-home .fl-hero-description {
+    font-size: 12px;
+  }
+
+  .fl-home .fl-hero-points {
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .fl-home .fl-hero-points > span {
+    font-size: 8px;
+  }
+
+  .fl-home .fl-hero-points b {
+    width: 22px;
+    height: 22px;
+  }
+
+  .fl-home .fl-hero-visual {
+    height: min(94vw, 410px);
+    margin-top: 8px;
+  }
+
+  .fl-home .fl-sole-front {
+    left: 27%;
+    width: 43%;
+    height: 88%;
+  }
+
+  .fl-home .fl-sole-left {
+    left: 3%;
+    top: 18%;
+    width: 39%;
+    height: 72%;
+  }
+
+  .fl-home .fl-sole-right {
+    left: 48%;
+    top: 19%;
+    width: 39%;
+    height: 72%;
+  }
+
+  .fl-home .fl-sole-back {
+    left: 60%;
+    top: 8%;
+    width: 37%;
+    height: 72%;
+  }
+
+  .fl-home .fl-floating-label {
+    padding: 8px 9px;
+  }
+
+  .fl-home .fl-floating-label > span {
+    font-size: 7px;
+  }
+
+  .fl-home .fl-floating-label > strong {
+    font-size: 8px;
+  }
+
+  .fl-home .fl-label-top { top: 5%; }
+  .fl-home .fl-label-bottom { bottom: 3%; }
+
+  .fl-home .fl-hero-footer {
+    flex-wrap: wrap;
+    padding: 14px 18px;
+    font-size: 8px;
+  }
+
+  .fl-home .fl-hero-footer > span:last-child {
+    display: none;
+  }
+
+  .fl-home .fl-products-section,
+  .fl-home .fl-benefits-section {
+    padding: 55px 0;
+  }
+
+  .fl-home .fl-products-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .fl-home .fl-products-intro h2 {
+    max-width: 380px;
+    font-size: 38px;
+  }
+
+  .fl-home .fl-product-cards {
+    gap: 10px;
+  }
+
+  .fl-home .fl-product-image {
+    height: clamp(120px, 38vw, 170px);
+  }
+
+ 
+
+  .fl-home .fl-manufacturing-inner {
+    grid-template-columns: 1fr;
+    gap: 27px;
+    padding: 50px 0;
+  }
+
+  .fl-home .fl-manufacturing-copy h2 {
+    font-size: 38px;
+  }
+
+  .fl-home .fl-factory-image {
+    min-height: 240px;
+  }
+
+  .fl-home .fl-manufacturing-side {
+    gap: 10px;
+  }
+
+  .fl-home .fl-manufacturing-side span {
+    font-size: 16px;
+  }
+
+  .fl-home .fl-manufacturing-side p {
+    font-size: 9px;
+  }
+
+  .fl-home .fl-benefits-heading h2 {
+    font-size: 34px;
+    letter-spacing: -.05em;
+  }
+
+  .fl-home .fl-benefit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .fl-home .fl-benefit-card {
+    min-height: 190px;
+    padding: 16px 12px;
+  }
+
+  .fl-home .fl-benefit-card h3 {
+    font-size: 11px;
+  }
+
+  .fl-home .fl-benefit-card p {
+    font-size: 10px;
+  }
+
+  .fl-home .fl-cta-section {
+    padding: 60px 18px;
+  }
+
+  .fl-home .fl-cta-content h2 {
+    font-size: clamp(46px, 12vw, 61px);
+    letter-spacing: -.06em;
+  }
+
+  .fl-home .fl-cta-mark {
+    right: -15px;
+    font-size: 210px;
+  }
+}
+
+
+/* FOOTLUXE — Premium animated product cards */
+
+.fl-product-cards {
+  gap: 22px;
+}
+
+.fl-product-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e8e5e0;
+  border-radius: 4px;
+  background: linear-gradient(145deg, #ffffff, #f8f7f4);
+  box-shadow: 0 5px 18px rgba(20, 20, 20, 0.035);
+  transition:
+    transform 0.45s cubic-bezier(.2, .8, .2, 1),
+    box-shadow 0.45s ease,
+    border-color 0.35s ease;
+  animation: flCardEnter 0.75s both;
+}
+
+.fl-product-card:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.fl-product-card:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.fl-product-card:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+@keyframes flCardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fl-product-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #f58232;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: 2;
+}
+
+.fl-product-card:hover {
+  transform: translateY(-8px);
+  border-color: #f58232;
+  box-shadow: 0 20px 38px rgba(25, 25, 25, 0.10);
+}
+
+.fl-product-card:hover::before {
+  transform: scaleX(1);
+}
+
+.fl-product-image {
+  background: #f2f1ee;
+  overflow: hidden;
+}
+
+.fl-product-image img {
+  transition:
+    transform 0.65s cubic-bezier(.2, .7, .2, 1),
+    filter 0.4s ease;
+}
+
+.fl-product-card:hover .fl-product-image img {
+  transform: scale(1.09);
+  filter: contrast(1.04);
+}
+
+.fl-product-arrow {
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    color 0.35s ease;
+}
+
+.fl-product-card:hover .fl-product-arrow {
+  transform: translateX(4px);
+  background: #f58232;
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fl-product-card,
+  .fl-product-card::before,
+  .fl-product-image img,
+  .fl-product-arrow {
+    animation: none;
+    transition: none;
+  }
+}
+
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  .fl-home *,
+  .fl-home *::before,
+  .fl-home *::after {
+    animation: none !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .fl-home .fl-enter,
+  .fl-home .fl-reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
